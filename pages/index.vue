@@ -1,5 +1,5 @@
 <template>
-  <v-container class="pt-12">
+  <v-container class="pt-12 px-auto">
     <v-row class="mt-12">
       <div class="font_nav">
         Experience
@@ -32,8 +32,8 @@
         <v-icon>mdi-linkedin</v-icon>
       </v-btn>
     </v-row>
-    <v-row>
-
+    <v-row class="pt-2"> 
+      <v-btn x-large color="#BFFCF9" class="btnish">Send me a Message</v-btn>
     </v-row>
   </v-container>
 </template>
@@ -50,6 +50,11 @@ export default {
   font-family: 'Oswald', sans-serif;
   font-size: 25px;
   color: #ec87e4;
+}
+.btnish{
+  border-radius: .5em;
+  box-shadow: -12px -12px 12px 0 rgba(255, 255, 255, 1),
+  12px, 12px, 12px, 0 rgba(0, 0, 0, 1)
 }
 .font_name {
   font-family: 'Baloo Bhai', cursive;

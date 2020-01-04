@@ -1,5 +1,5 @@
 <template>
-  <v-app class="body">
+  <v-app class="body btnish">
   <Nuxt/>
   </v-app>
 </template>
@@ -39,6 +39,12 @@ export default {
   border-style: double;
   border-color: #bffcf9;
   border-width:5px;
-  background-color: #fff;
+  background-color: #FFFFFF;
+}
+
+.btnish{
+  border-radius: .5em;
+  box-shadow: -12px -12px 12px 0 rgba(255, 255, 255, 1),
+  12px, 12px, 12px, 0 rgba(0, 0, 0, 1)
 }
 </style>
