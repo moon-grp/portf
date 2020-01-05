@@ -1,18 +1,22 @@
 <template>
   <v-container class="pt-12 px-auto">
     <v-row class="mt-12">
-      <div class="font_nav">
-        Experience
+      <nuxt-link to="/">
+      <div class="font_nav fancy-link">
+        Experience & skills
       </div>
+      </nuxt-link>
     </v-row>
     <v-row class="mt-2">
-      <div class="font_nav">
+      <nuxt-link to="/projects">
+      <div class="font_nav fancy-link">
         Projects
       </div>
+      </nuxt-link>
     </v-row>
     <v-row class="pusherT font_name">
       <div>
-        Olumide Adebayo
+        Olumide Adebayo.
       </div>
     </v-row>
     <v-row>
@@ -22,18 +26,39 @@
       </div>
     </v-row>
     <v-row class="pt-2 ml-n3">
-      <v-btn href="http://github.com/moon-grp" tile x-large color="#ccc" text icon>
+      <v-btn
+        href="http://github.com/moon-grp"
+        tile
+        x-large
+        color="#ccc"
+        text
+        icon
+      >
         <v-icon>mdi-github-circle</v-icon>
       </v-btn>
-      <v-btn href="https://twitter.com/GrpMoon" tile x-large color="#ccc" text icon>
+      <v-btn
+        href="https://twitter.com/GrpMoon"
+        tile
+        x-large
+        color="#ccc"
+        text
+        icon
+      >
         <v-icon>mdi-twitter</v-icon>
       </v-btn>
-      <v-btn href="https://www.linkedin.com/in/olumide-adebayo-263321158/" tile x-large color="#ccc" text icon>
+      <v-btn
+        href="https://www.linkedin.com/in/olumide-adebayo-263321158/"
+        tile
+        x-large
+        color="#ccc"
+        text
+        icon
+      >
         <v-icon>mdi-linkedin</v-icon>
       </v-btn>
     </v-row>
-    <v-row class="pt-2"> 
-      <v-btn x-large color="#BFFCF9" class="btnish">Send me a Message</v-btn>
+    <v-row class="pt-2">
+      <v-btn x-large color="#ffe700" class="btn_font" depressed>Send me a Message</v-btn>
     </v-row>
   </v-container>
 </template>
@@ -45,21 +70,43 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai|Oswald:300,400&display=swap');
+/*@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai|Oswald:300,400&display=swap');   font-family: 'Baloo Bhai', cursive;*/
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,500&display=swap');
 .font_nav {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Dosis', sans-serif;
   font-size: 25px;
-  color: #ec87e4;
+  color: #ffe700;
 }
-.btnish{
-  border-radius: .5em;
-  box-shadow: -12px -12px 12px 0 rgba(255, 255, 255, 1),
-  12px, 12px, 12px, 0 rgba(0, 0, 0, 1)
+
+a{
+  text-decoration: none;
 }
+
+.fancy-link {
+  text-decoration: none;
+  background-image: linear-gradient(#ccc, #ccc);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 0% 3px;
+  transition: background-size 500ms ease-in-out;
+
+  
+  font-weight: var(--fw-bold);
+}
+
+.fancy-link:hover {
+  background-size: 100% 3px;
+  color: inherit;
+}
+
+
+
+
+
 .font_name {
-  font-family: 'Baloo Bhai', cursive;
+ font-family: 'Dosis', sans-serif;
   font-size: 47px;
-  color: #ec87e4;
+  color: #ffe700;
   font-weight: 400;
 }
 
@@ -68,13 +115,13 @@ export default {
 }
 
 .font_style {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Dosis', sans-serif;
   font-size: 20px;
-  color: #ec87e4;
+  color: #ffe700;
 }
 
 .btn_font {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Dosis', sans-serif;
   font-size: 60px;
   font-weight: bold;
 }
