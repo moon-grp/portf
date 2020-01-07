@@ -2,7 +2,7 @@
   <v-container>
     <v-row class="mt-9">
       <v-col v-for="card in cards" :key="card.title" :cols="card.flex">
-        <v-card raised>
+        <v-card raised  max-width="344">
           <v-img
             :src="card.src"
             class="white--text align-end"
@@ -10,20 +10,21 @@
           >
           </v-img>
           <v-card-title v-text="card.title"></v-card-title>
+           <v-card-subtitle v-text="card.sub">
+    
+    </v-card-subtitle>
           <v-card-actions>
+          
+
+            <v-btn icon>
+              <v-icon>mdi-github-circle</v-icon>
+            </v-btn>
             <v-spacer></v-spacer>
-
             <v-btn icon>
-              <v-icon>mdi-heart</v-icon>
+              <v-icon>mdi-link-variant</v-icon>
             </v-btn>
 
-            <v-btn icon>
-              <v-icon>mdi-bookmark</v-icon>
-            </v-btn>
-
-            <v-btn icon>
-              <v-icon>mdi-share-variant</v-icon>
-            </v-btn>
+            
           </v-card-actions>
         </v-card>
       </v-col>
@@ -36,16 +37,22 @@ export default {
   name: 'projects',
   data: () => ({
     cards: [
-      { title: 'Pre-fab homes', src: '/expense.png', flex: 3 },
-      { title: 'Favorite road trips', src: '/borodash.png', flex: 3 },
-      { title: 'Best airlines', src: '/empdash.png', flex: 3 },
-      { title: 'Best airlines', src: '/coffee.png', flex: 3 },
-      { title: 'Best airlines', src: '/insure.png', flex: 3 },
-      { title: 'Best airlines', src: '/reiner.png', flex: 3 },
-      { title: 'Best airlines', src: '/reiss.png', flex: 3 }
+      { title: 'Expense Dashboard', src: '/expense.png', flex: 3, sub: "An Expense tracker built with vuejs and vuetify" },
+      { title: 'BoroDash', src: '/borodash.png', flex: 3, sub:"A simple fintech dashboard for softloan" },
+      { title: 'EmployeeDash', src: '/empdash.png', flex: 3, sub:"An employee internal communication dashboard built with vuejs, vuetify and github api" },
+      { title: 'Coffe shop', src: '/coffee.png', flex: 3, sub:"landing page for coffe shop built with vuejs and vuetify" },
+      { title: 'Qinsurance', src: '/insure.png', flex: 3, sub:"QInsurance dashboard built with vuejs and vuebootstrap" },
+      { title: 'Reiner', src: '/reiner.png', flex: 3, sub:"Text translator built with vuejs, vuetify and yandex Api" },
+      { title: 'Reiss', src: '/reiss.png', flex: 3, sub:"  Crypto currency dashboard built with quasar framework and cryptocompare api" }
     ]
   })
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.font {
+  font-family: 'Dosis', sans-serif;
+  font-size: 25px;
+  color: #05014a;
+}
+</style>
