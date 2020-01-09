@@ -1,26 +1,24 @@
 <template>
-  <v-app class="body btnish">
-  <Nuxt/>
+  <v-app class="body">
+    <transition name="router_animation" enter-active-class="animated slideInLeft" leave-active-class="animated fadeOutDown">
+      <Nuxt />
+    </transition>
   </v-app>
 </template>
 
 <script>
 export default {
-  data () {
-    return {
-     
-    }
+  data() {
+    return {}
   }
 }
 </script>
 
-
 <style scoped>
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css");
 .body {
-  min-height: 100vh;
+  max-height: 100%;
   background-color: #05014a;
   margin: 0;
 }
-
-
 </style>

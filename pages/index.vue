@@ -60,7 +60,7 @@
         </v-btn>
       </v-row>
       <v-row class="pt-2">
-        <v-btn x-large color="#ffe700" class="btn_font" depressed
+        <v-btn x-large color="#ffe700" class="btn_font" depressed :href="`mailto:olumidemm@gmail.com`"
           >Send me a Message</v-btn
         >
       </v-row>

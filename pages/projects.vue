@@ -1,8 +1,15 @@
 <template>
+<div>
   <v-container>
     <v-row class="mt-9">
-      <v-col v-for="card in cards" :key="card.title" :cols="card.flex">
-        <v-card raised max-width="344">
+      <v-col
+        v-for="card in cards"
+        :key="card.title"
+        :lg="card.flex"
+        :sm="card.sm"
+        :md="card.md"
+      >
+        <v-card raised max-width="344" class="mx-auto">
           <v-img :src="card.src" class="white--text align-end" height="150px">
           </v-img>
 
@@ -28,23 +35,38 @@
         </v-card>
       </v-col>
     </v-row>
-    
-    <v-btn
-              dark
-              fab
-              top
-              right
-              color="pink"
-            >
-              <v-icon>mdi-plus</v-icon>
-            </v-btn>
+
   </v-container>
+       <v-bottom-navigation
+    v-model="bottomNav"
+    grow
+    class="bg"
+  >
+    <v-btn to="/"  color="#ffe700" value="recent">
+      <span>Home</span>
+      <v-icon>mdi-home</v-icon>
+    </v-btn>
+
+    <v-btn to="/experience" color="#ffe700" value="projects">
+      <span>Projects</span>
+      <v-icon>mdi-briefcase</v-icon>
+    </v-btn>
+
+        <v-btn to="/experience" color="#ffe700" value="experience">
+      <span>Experience</span>
+      <v-icon>mdi-office-building</v-icon>
+    </v-btn>
+
+   
+  </v-bottom-navigation>
+</div>
 </template>
 
 <script>
 export default {
   name: 'projects',
   data: () => ({
+     bottomNav: 'recent',
     cards: [
       {
         title: 'Expense Dashboard',
@@ -52,7 +74,9 @@ export default {
         flex: 3,
         sub: 'An Expense tracker built with vuejs and vuetify.',
         github: 'https://github.com/moon-grp/fundall_exp',
-        link: 'https://sandbox-expense.netlify.com'
+        link: 'https://sandbox-expense.netlify.com',
+        sm: '12',
+        md: '6'
       },
       {
         title: 'BoroDash',
@@ -60,7 +84,9 @@ export default {
         flex: 3,
         sub: 'A simple fintech dashboard for softloan.',
         github: 'https://github.com/moon-grp/borodash',
-        link: 'https://boro-dash.netlify.com'
+        link: 'https://boro-dash.netlify.com',
+        sm: '12',
+        md: '6'
       },
       {
         title: 'EmployeeDash',
@@ -69,7 +95,9 @@ export default {
         sub:
           'An employee internal communication dashboard built with vuejs, vuetify and github api.',
         github: 'https://github.com/moon-grp/sandbox_employee_dashboard',
-        link: 'https://sandbox-emp-dash.netlify.com'
+        link: 'https://sandbox-emp-dash.netlify.com',
+        sm: '12',
+        md: '6'
       },
       {
         title: 'Coffe shop',
@@ -77,7 +105,9 @@ export default {
         flex: 3,
         sub: 'landing page for coffe shop built with vuejs and vuetify.',
         github: 'https://github.com/moon-grp/sandbox-prod-page',
-        link: 'https://sandbox-coffee.netlify.com'
+        link: 'https://sandbox-coffee.netlify.com',
+        sm: '12',
+        md: '6'
       },
       {
         title: 'Qinsurance',
@@ -85,7 +115,9 @@ export default {
         flex: 3,
         sub: 'QInsurance dashboard built with vuejs and vuebootstrap.',
         github: 'https://github.com/moon-grp/natterbase_test',
-        link: ''
+        link: '',
+        sm: '12',
+        md: '6'
       },
       {
         title: 'Reiner',
@@ -93,7 +125,9 @@ export default {
         flex: 3,
         sub: 'Text translator built with vuejs, vuetify and yandex api.',
         github: 'https://github.com/moon-grp/Project-reiner',
-        link: 'https://project-reiner.netlify.com'
+        link: 'https://project-reiner.netlify.com',
+        sm: '12',
+        md: '6'
       },
       {
         title: 'Reiss',
@@ -102,7 +136,9 @@ export default {
         sub:
           '  Crypto currency dashboard built with quasar framework and cryptocompare api.',
         github: 'https://github.com/moon-grp/Project-Reiss',
-        link: 'https://project-reiss.netlify.com'
+        link: 'https://project-reiss.netlify.com',
+        sm: '12',
+        md: '6'
       }
     ]
   })
@@ -110,5 +146,7 @@ export default {
 </script>
 
 <style scoped>
-
+.bg{
+  background-color: #05014a;
+}
 </style>
