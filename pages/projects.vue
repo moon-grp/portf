@@ -47,10 +47,6 @@
       <v-icon>mdi-home</v-icon>
     </v-btn>
 
-    <v-btn to="/experience" color="#ffe700" value="projects">
-      <span>Projects</span>
-      <v-icon>mdi-briefcase</v-icon>
-    </v-btn>
 
         <v-btn to="/experience" color="#ffe700" value="experience">
       <span>Experience</span>

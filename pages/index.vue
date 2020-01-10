@@ -3,7 +3,7 @@
     <v-row>
     <v-col cols="6">
       <v-row class="mt-6">
-        <nuxt-link to="/">
+        <nuxt-link to="/experience">
           <div class="font_nav fancy-link">
             Experience & skills
           </div>
