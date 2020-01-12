@@ -60,7 +60,7 @@
         </v-btn>
       </v-row>
       <v-row class="pt-2">
-        <v-btn x-large color="#ffe700" class="btn_font" depressed :href="`mailto:olumidemm@gmail.com`"
+        <v-btn x-large color="#ffe700" class="btn_font " depressed :href="`mailto:olumidemm@gmail.com`"
           >Send me a Message</v-btn
         >
       </v-row>
@@ -126,5 +126,10 @@ a {
   font-family: 'Dosis', sans-serif;
   font-size: 60px;
   font-weight: bold;
+  
+}
+.neo{
+  box-shadow: 6px 6px 12px rgba(0, 0,0,0.8),
+  -6px -6px 12px rgba(255, 255,255,1)
 }
 </style>

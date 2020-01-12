@@ -9,7 +9,7 @@
         :sm="card.sm"
         :md="card.md"
       >
-        <v-card raised max-width="344" class="mx-auto">
+        <v-card raised max-width="344" class=" mx-auto">
           <v-img :src="card.src" class="white--text align-end" height="150px">
           </v-img>
 
