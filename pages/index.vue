@@ -1,7 +1,7 @@
 <template>
   <v-container class="pt-12 px-auto">
-    <v-row>
-    <v-col cols="6">
+    <v-row class="mobile">
+    <v-col lg="6" >
       <v-row class="mt-6">
         <nuxt-link to="/experience">
           <div class="font_nav fancy-link">
@@ -84,6 +84,18 @@ export default {
   font-size: 25px;
   color: #ffe700;
 }
+
+@media only screen and (max-width: 600px) {
+  .mobile{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+.pusherT {
+margin-top: 30%;
+}
+}
+
 
 a {
   text-decoration: none;

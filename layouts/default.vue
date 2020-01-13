@@ -17,7 +17,7 @@ export default {
 <style scoped>
 @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css");
 .body {
-  max-height: 100%;
+  min-height: 100%;
   background-color: #05014a;
   margin: 0;
 }

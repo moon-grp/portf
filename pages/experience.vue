@@ -3,13 +3,15 @@
     <v-container>
       <v-row class="mt-9">
         <v-col lg="6" sm="12">
-          <v-timeline dense>
+          <v-timeline class=" mx-auto" dense>
             <v-timeline-item small color="#ffe700">
               <h2 class="text">Frontend Developer</h2>
               <h5 class="mb-4 text_title">Davetechk, Abuja (2019 - Present)</h5>
               <div class="text_title">
                 <div>- Develop new frontend features.</div>
-                <div>- Remotely colaborated with team members.</div>
+                <div>- Small scale custom development for clients.</div>
+                <div>- Client support.</div>
+                <div>- Api integration.</div>
               </div>
             </v-timeline-item>
 
@@ -20,7 +22,8 @@
               </h5>
               <div class="text_title">
                 <div>- Develop new frontend features.</div>
-                <div>- Remotely colaborated with team members.</div>
+                <div>- Assisted in building studylab.</div>
+                <div>- Api intergration</div>
               </div>
             </v-timeline-item>
 
@@ -30,20 +33,18 @@
                 Aiivon Innovations, Abuja (June 2017 - December 2017)
               </h5>
               <div class="text_title">
-                <div>- Develop new frontend features.</div>
-                <div>- Remotely colaborated with team members.</div>
                 <div>
-                 - Worked on a school management webapp for the company.
+                  - Worked on a school management webapp powered by electron.
                 </div>
-                <div>- Built socialnetwork android app.</div>
+                <div>- Built the android version of OneUrl; a social media card app.</div>
               </div>
             </v-timeline-item>
           </v-timeline>
         </v-col>
-        <v-col lg="6" sm="12"> this is for the skills </v-col>
+        <v-col lg="6" sm="12">  </v-col>
       </v-row>
     </v-container>
-    <v-bottom-navigation v-model="bottomNav" grow class="bg">
+    <v-bottom-navigation v-model="bottomNav"  grow class="bg">
       <v-btn to="/" color="#ffe700" value="recent">
         <span>Home</span>
         <v-icon>mdi-home</v-icon>
