@@ -135,6 +135,17 @@ export default {
         link: 'https://project-reiss.netlify.com',
         sm: '12',
         md: '6'
+      },
+       {
+        title: 'Zaggadat',
+        src: '/zagga.png',
+        flex: 3,
+        sub:
+          'A sample PWA built with ionic4 and Vue.',
+        github: 'https://github.com/moon-grp/ion',
+        link: 'https://zaggadat.netlify.com',
+        sm: '12',
+        md: '6'
       }
     ]
   })
