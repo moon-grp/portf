@@ -48,7 +48,7 @@
           <v-btn
             v-for="menu in menu"
             :key="menu.title"
-            class="mx-4"
+            class="mx-4 btn_font"
             color="#ccc"
             :to="menu.to"
             depressed
@@ -170,5 +170,12 @@ export default {
 <style scoped>
 .bg{
   background-color: #05014a;
+}
+
+.btn_font {
+  font-family: 'Dosis', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  
 }
 </style>
