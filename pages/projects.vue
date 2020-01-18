@@ -37,7 +37,8 @@
     </v-row>
 
   </v-container>
-      <v-footer padless>
+
+      <v-footer  padless>
        <v-card
         flat
         tile
@@ -59,6 +60,7 @@
         </v-card-text>
        </v-card>
     </v-footer>
+  
 </div>
 </template>
 
