@@ -36,25 +36,39 @@
                 <div>
                   - Worked on a school management webapp powered by electron.
                 </div>
-                <div>- Built the android version of OneUrl; a social media card app.</div>
+                <div>
+                  - Built the android version of OneUrl; a social media card
+                  app.
+                </div>
               </div>
             </v-timeline-item>
           </v-timeline>
         </v-col>
-        <v-col lg="6" sm="12">  </v-col>
+        <v-col lg="6" sm="12"> </v-col>
       </v-row>
     </v-container>
-    <v-bottom-navigation v-model="bottomNav"  grow class="bg">
-      <v-btn to="/" color="#ffe700" value="recent">
-        <span>Home</span>
-        <v-icon>mdi-home</v-icon>
-      </v-btn>
-
-      <v-btn to="/projects" color="#ffe700" value="projects">
-        <span>Projects</span>
-        <v-icon>mdi-briefcase-outline</v-icon>
-      </v-btn>
-    </v-bottom-navigation>
+    <v-footer padless>
+       <v-card
+        flat
+        tile
+        width="100%"
+        class="bg text-center"
+      >
+       <v-card-text>
+          <v-btn
+            v-for="menu in menu"
+            :key="menu.title"
+            class="mx-4"
+            color="#ccc"
+            :to="menu.to"
+            depressed
+            outlined
+          >
+          <span v-text="menu.title"></span>
+          </v-btn>
+        </v-card-text>
+       </v-card>
+    </v-footer>
   </div>
 </template>
 
@@ -62,7 +76,18 @@
 export default {
   name: 'experience',
   data: () => ({
-    bottomNav: 'recent'
+    bottomNav: 'recent',
+     menu: [
+       {
+         title:'Home',
+         to:"/"
+       },
+       {
+         title:'Projects',
+         to:"projects"
+       },
+        
+      ],
   })
 }
 </script>

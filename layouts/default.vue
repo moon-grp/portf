@@ -3,6 +3,7 @@
     <transition name="router_animation" enter-active-class="animated slideInLeft" leave-active-class="animated fadeOutDown">
       <Nuxt />
     </transition>
+    
   </v-app>
 </template>
 
