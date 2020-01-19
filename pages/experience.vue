@@ -52,7 +52,8 @@
         flat
         tile
         width="100%"
-        class="bg text-center"
+        class="text-center"
+        color="#05014a"
       >
        <v-card-text>
           <v-btn

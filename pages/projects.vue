@@ -43,7 +43,7 @@
         flat
         tile
         width="100%"
-        class="red text-center"
+        class="bg text-center"
       >
        <v-card-text>
           <v-btn
